@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React-todo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple todo list that allows you to add and delete items. It uses reusable components and takes advantage of the virtual DOM to update information on the page without having to reload the page. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
