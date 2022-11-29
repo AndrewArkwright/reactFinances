@@ -9,21 +9,21 @@ function App() {
     [
         {
             id: 1,
-            text: "shop",
-            day: "Feb 5th at 2:30pm",
-            reminder: false,
+            text: "car payment",
+            cost: 250,
+            day: "Feb 5th",
         },
         {
             id: 2,
-            text: "code",
-            day: "Feb 6th at 2:30pm",
-            reminder: true,
+            text: "anime",
+            cost: 100,
+            day: "Feb 6th",
         },
         {
             id: 3,
-            text: "play",
-            day: "Feb 7th at 2:30pm",
-            reminder: false,
+            text: "games",
+            cost: 40,
+            day: "Feb 7th",
         }
     ]
   )
@@ -40,16 +40,11 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id))
   }
 
-  //Toggle reminder
-  const toggleReminder = (id) => {
-    setTasks(tasks.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task))
-  }
-
   return (
     <div className="container">
       <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
       {showAddTask && <AddTask onAdd={addTask} />}
-      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : "No Tasks To Show"}
+      {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask}/> : "No Costs To Show"}
     </div>
   );
 }

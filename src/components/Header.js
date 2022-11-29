@@ -12,7 +12,7 @@ const Header = ({ title, onAdd, showAdd }) => {
 }
 
 Header.defaultProps = {
-    title: "Todo List"
+    title: "Financial Calculator"
 }
 
 Header.propTypes = {
